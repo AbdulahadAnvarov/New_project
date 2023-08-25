@@ -59,4 +59,4 @@ class BookRecord(models.Model):
 
 
     def __str__(self):
-        return f"{ self.student.name}"
+        return f"{ self.student.name} take {self.book.name}"
