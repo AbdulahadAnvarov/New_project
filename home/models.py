@@ -60,3 +60,8 @@ class BookRecord(models.Model):
 
     def __str__(self):
         return f"{ self.student.name} take {self.book.name}"
+
+    def __repr__(self):
+        return "salom"
+
+print("salom ")
