@@ -4,5 +4,10 @@ from home.views import helloview
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',helloview)
+    path('',helloview),
 ]
+
+
+
+
+
