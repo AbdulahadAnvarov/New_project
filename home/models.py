@@ -63,3 +63,5 @@ class BookRecord(models.Model):
 
     def __repr__(self):
         return "salom"
+
+print("salom ")
