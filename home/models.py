@@ -23,7 +23,7 @@ class Author(models.Model):
     email = models.EmailField()
     gender = models.CharField(max_length=6,choices=GENDER_F)
     city = models.CharField(max_length=30)
-    is_alive = models.BooleanField()
+    is_alive = models.BooleanField(default=True)
     img = models.FileField(upload_to=f'image/author')
     student = models.ForeignKey(Student,on_delete=models.CASCADE)
 
@@ -36,7 +36,7 @@ class Book(models.Model):
     genre = models.CharField(max_length=50)
     page = models.PositiveIntegerField()
     # author = models.ManyToManyField(Author)
-    is_active = models.BooleanField()
+    is_active = models.BooleanField(default=True)
 
     def __str__(self):
         return self.title
