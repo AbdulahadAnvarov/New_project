@@ -23,7 +23,7 @@ class Author(models.Model):
     email = models.EmailField()
     gender = models.CharField(max_length=6,choices=GENDER_F)
     city = models.CharField(max_length=30)
-    is_alive = models.BooleanField()
+    is_alive = models.BooleanField(default=True)
     img = models.FileField(upload_to=f'image/author')
     student = models.ForeignKey(Student,on_delete=models.CASCADE)
 
