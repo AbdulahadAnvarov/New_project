@@ -36,7 +36,7 @@ class Book(models.Model):
     genre = models.CharField(max_length=50)
     page = models.PositiveIntegerField()
     # author = models.ManyToManyField(Author)
-    is_active = models.BooleanField()
+    is_active = models.BooleanField(default=True)
 
     def __str__(self):
         return self.title
